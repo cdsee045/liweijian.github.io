@@ -4,9 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="基础知识, Phoox">
-    <meta name="description" content="Linux中编写程序编写Python程序在hello_world.py中写入python print(&amp;#39;hello world&amp;#39;) 终端输入python3 hello_world.py 编译并运行
-编写C++程序12345#">
+    <meta name="keywords" content="快速上手, Phoox">
+    <meta name="description" content="Node创建节点1.python示例新建python文件”node.py”
+import rclpy
+from rclpy.node import Node
+def main():
+    rclpy.init()    #初始化
+    ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +22,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>基础知识 | Phoox</title>
+    <title>快速上手 | Phoox</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -48,10 +52,11 @@
     
 
 
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 8.1.1"></head>
+<meta name="generator" content="Hexo 8.1.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -333,12 +338,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">基础知识</h1>
+                    <h1 class="description center-align post-title">快速上手</h1>
                 </div>
             </div>
         </div>
@@ -370,8 +375,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux/" class="post-category">
-                                Linux
+                            <a href="/categories/ROS/" class="post-category">
+                                ROS
                             </a>
                         
                     </div>
@@ -399,24 +404,54 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="Linux中编写程序"><a href="#Linux中编写程序" class="headerlink" title="Linux中编写程序"></a>Linux中编写程序</h4><h5 id="编写Python程序"><a href="#编写Python程序" class="headerlink" title="编写Python程序"></a>编写Python程序</h5><p>在hello_world.py中写入<br><code>python print(&#39;hello world&#39;) </code><br>终端输入<code>python3 hello_world.py</code> 编译并运行</p>
-<h5 id="编写C-程序"><a href="#编写C-程序" class="headerlink" title="编写C++程序"></a>编写C++程序</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&quot;iostream&quot;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    std::cout&lt;&lt;<span class="string">&quot;hello world&quot;</span>&lt;&lt;std::endl;</span><br><span class="line">     <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>1.使用g++编译运行 终端输入<code>g++ hello_world.cpp</code> 编译文件，输入<code>./a.out</code>执行生成的可执行文件<br>2.使用cmake编译运行<br>编写cmakelist.txt文本</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION 3.8)</span><br><span class="line">project(helloword)</span><br><span class="line">add_executable(hello hello_world.cpp)</span><br></pre></td></tr></table></figure>
-<p>终端输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cmake . </span><br><span class="line">make</span><br></pre></td></tr></table></figure>
-<p>编译后输入<code>./hello</code>执行生成的文件</p>
-<h4 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h4><p><code>printenv</code> 查看所有环境变量<br><code>echo $path</code> 查看指定的环境变量</p>
-<h4 id="ifconfig指令"><a href="#ifconfig指令" class="headerlink" title="ifconfig指令"></a>ifconfig指令</h4><p>列出系统的网络接口 有线网卡 无线网卡 虚拟网卡 usb转网卡<br>例：wlp0s20f3: flags&#x3D;4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500<br>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; inet 172.21.58.59  netmask 255.255.128.0  broadcast 172.21.127.255<br>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;inet6 2403:ac00:b101:260:b4bf:9e16:bde5:a094  prefixlen 64  scopeid 0x0<global><br>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;inet6 2403:ac00:b101:260:7fd0:982a:c9a1:753b  prefixlen 64  scopeid 0x0<global><br>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;inet6 fe80::f84e:a9c9:7c61:1f7b  prefixlen 64  scopeid 0x20<link><br>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;ether 60:e3:2b:d9:d8:fc  txqueuelen 1000  (以太网)<br>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;RX packets 230563  bytes 251608316 (251.6 MB)<br>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;RX errors 0  dropped 11  overruns 0  frame 0<br>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;TX packets 108317  bytes 34368703 (34.3 MB)<br>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0</p>
-<h5 id="第一行表示网卡名称和状态"><a href="#第一行表示网卡名称和状态" class="headerlink" title="第一行表示网卡名称和状态"></a>第一行表示网卡名称和状态</h5><p>en开头的代表有线网卡，wl开头的代表无线网卡<br>4163指所有标志位的缩写总和<br>up表示驱动正常启动，RUNNING表示有线连接正常<br>BROADCAST表示网卡支持广播，MULTICAST表示网卡支持多播<br>mtu 1500(Maximum Transmission Unit)最大传输单元 表示最大传输1500字节</p>
-<h5 id="第二三四五行表示ip地址信息"><a href="#第二三四五行表示ip地址信息" class="headerlink" title="第二三四五行表示ip地址信息"></a>第二三四五行表示ip地址信息</h5><p>inet：这是你的 IPv4 地址。在这个例子中是  172.21.58.59<br>netmask：子网掩码。255.255.128.0<br>broadcast：广播地址。<br>inet6：IPv6 地址（一般情况下在调试机器人时可以暂时忽略）</p>
-<h5 id="第六行表示硬件mac地址"><a href="#第六行表示硬件mac地址" class="headerlink" title="第六行表示硬件mac地址"></a>第六行表示硬件mac地址</h5><p>ether表示网卡的物理地址 唯一的</p>
-<h5 id="最后四行表示数据包统计"><a href="#最后四行表示数据包统计" class="headerlink" title="最后四行表示数据包统计"></a>最后四行表示数据包统计</h5><p>RX表示接收到的数据包 TX表示发送的数据包</p>
+                <h3 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h3><h4 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h4><h4 id="1-python示例"><a href="#1-python示例" class="headerlink" title="1.python示例"></a>1.python示例</h4><p>新建python文件”node.py”</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">import rclpy
+from rclpy.node import Node
+def main():
+    rclpy.init()    #初始化
+    node&#x3D;Node(&quot;Python_node&quot;)     #创建节点
+    node.get_logger().info(&quot;python节点&quot;)
+    rclpy.spin(node)
+    rclpy.shutdown()
+
+if __name__&#x3D;&#x3D;&quot;__main__&quot;:
+    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>终端输入<code>python3 node.py</code></p>
+<h4 id="2-C-示例"><a href="#2-C-示例" class="headerlink" title="2.C++示例"></a>2.C++示例</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">#include&quot;rclcpp&#x2F;rclcpp.hpp&quot;  
+int main(int argc,char**argv)   #程序入口参数 argc表示参数数量 argv表示参数数组
+&#123;
+    rclcpp::init(argc,argv);
+    auto node&#x3D;std::make_shared&lt;rclcpp::Node&gt;(&quot;cpp_node&quot;);
+    RCLCPP_INFO(node-&gt;get_logger(),&quot;c++节点&quot;);
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+    return 0;    
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>在编译时经常会遇到找不到对应库的问题，在cmakelist文件里需要添加依赖项目</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">set(CMAKE_CXX_STANDARD 17)    #ros2大量使用了 C++17,需要指定使用c++17编译
+cmake_minimum_required(VERSION 3.8)
+project(ros2_cpp)
+add_executable(ros2_cpp_node cpp_node.cpp)
+
+find_package(rclcpp REQUIRED)      
+message(STATUS $&#123;rclcpp_INCLUDE_DIRS&#125;)   #头文件及依赖的头文件
+target_include_directories(ros2_cpp_node PUBLIC $(rclcpp_INCLUDE_DIRS))  #包含头文件
+target_link_libraries(ros2_cpp_node $&#123;rclcpp_LIBRARIES&#125;) #链接库文件
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>find_package() #查找依赖库的位置，找不到会报错，找到后会生成一系列标准后缀的变量<br> _INCLUDE_DIRS（头文件包含路径）_LIBRARIES（需要链接的库文件）_VERSION（包的版本号）<br>message()向终端输出信息    </p>
+<h3 id="Package"><a href="#Package" class="headerlink" title="Package"></a>Package</h3><h4 id="创建和使用package"><a href="#创建和使用package" class="headerlink" title="创建和使用package"></a>创建和使用package</h4><h5 id="python示例"><a href="#python示例" class="headerlink" title="python示例"></a>python示例</h5><p>1.<code>ros2 pkg create --build-type ament_python demo_python_pkg   #创建功能包</code><br>在demo_python_pkg目录下有以下文件<br><img src="/image-4.png" alt="alt text"></p>
+<p>demo_python_pkg文件夹下放置节点代码，<strong>init</strong>.py标识这是python包<br>resource文件夹下放置功能包的标识  不用操作<br>test文件夹放置单元测试文件<br>package.xml该文件声明功能包的信息<br>setup.cfg 文本文件 放置配置选项<br>setup.py 构建脚本文件</p>
+<p>2.在pkg文件夹下按照之前的方法创建节点，然后在setup.py中修改entry_points的内容”‘exe的名字’&#x3D;’功能包名.节点文件名.函数名’,”如下<br><img src="/image-3.png" alt="alt text"><br>3.在package.xml文件中添加依赖<code>&lt;depend&gt;rclpy&lt;/depend&gt;</code><br>4.构建功能包 <code>colcon build</code><br>在当前目录下产生build install log三个文件夹。build存放构建过程中文件，install存放构建的结果 log存放构建日志</p>
+<p>注：编译生成的可执行文件在install-xxx.pkg-lib-xxx.pkg下 直接运行会提示找不到包 需要添加环境变量  ros2提供了一个脚本<br>终端输入<code>source install/setup.bash</code>  把编译好的工作环境也加到环境变量中<br>再输入<code>ros2 run 包名 节点名</code>即可启动节点</p>
+<h4 id="C-示例"><a href="#C-示例" class="headerlink" title="C++示例"></a>C++示例</h4><h3 id="工作空间"><a href="#工作空间" class="headerlink" title="工作空间"></a>工作空间</h3><p>在workspace文件夹下创建src文件夹用来存放所有的功能包<br><code>colcon build #构建src下所有的功能包</code> ws文件夹下有src build install log四个文件夹<br><code>colcon build --packages-select xxx   #只构建指定的功能包</code></p>
 
                 
             </div>
@@ -443,7 +478,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cdsee045.github.io/Linux/LInux/%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">https://cdsee045.github.io/Linux/LInux/%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</a>
+                    <a href="https://cdsee045.github.io/ROS/ROS/">https://cdsee045.github.io/ROS/ROS/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -524,12 +559,11 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Linux/LInux/%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">
+                <a href="/Linux/LInux/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
                     <div class="card-image">
                         
                         
@@ -545,9 +579,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2026-04-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2026-04-28
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -560,7 +594,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -571,13 +604,13 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/Linux/LInux/%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">
+                <a href="/ROS/ROS/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="基础知识">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="快速上手">
                         
-                        <span class="card-title">基础知识</span>
+                        <span class="card-title">快速上手</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -594,8 +627,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/ROS/" class="post-category">
+                                    ROS
                                 </a>
                             
                             
@@ -617,6 +650,9 @@
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.tomorrow.js"></script>
 
 
 <!-- 代码语言 -->
